@@ -1,0 +1,2 @@
+# LAB1
+BFS AND DFS
