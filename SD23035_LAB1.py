@@ -6,14 +6,14 @@ image = Image.open("LabReport_BSD2513_#1.jpg")
 
 
 graph = {
-    'A': ['B'],
-    'B': ['A', 'C', 'G'],
+    'A': ['B','D'],
+    'B': ['C', 'G', 'E'],
     'C': ['A', 'B'],
-    'D': ['A', 'C'],
-    'E': ['B', 'H'],
+    'D': ['C'],
+    'E': ['H'],
     'F': [],
-    'G': ['F', 'H'],
-    'H': ['F']
+    'G': ['F'],
+    'H': ['G', 'F']
 }
 
 for node in graph:
@@ -82,3 +82,4 @@ st.write("**Levels:**", bfs_level)
 st.subheader("DFS Result")
 dfs_order = dfs(start_node)
 st.write("**Order:**", dfs_order)
+
